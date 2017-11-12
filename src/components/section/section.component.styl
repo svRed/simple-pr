@@ -1,0 +1,16 @@
+@import "../../styles/const.styl";
+
+$minHeight = 'calc(100vh - %s - %s)' % ($header_height $footer_height);
+
+.section {
+    padding: 2em;
+    background-color: $white;
+
+    &.section_colorized {
+        background: $main_darker;
+    }
+
+    &_custom {
+        min-height: $minHeight;
+    }
+}

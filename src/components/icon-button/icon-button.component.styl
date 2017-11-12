@@ -1,0 +1,38 @@
+@import "../../styles/const.styl";
+
+.icon-button {
+    background-color: $black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 3px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+        background: $white;
+        color: $black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:before {
+            color: $black;
+        }
+    }
+    
+    &:before {
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        color: $white;
+    }
+
+    &__facebook:before {
+        content: '\e901';
+    }
+
+    &__instagram:before {
+        content: '\e902';
+        font-weight: 600;
+    }
+}

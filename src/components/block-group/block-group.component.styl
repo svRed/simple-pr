@@ -1,0 +1,120 @@
+.block-group {
+    $block = block-group;
+    display: flex;
+
+    &_horizontal {
+        flex-direction: row;
+
+        > .{$block}__item {
+            margin-left: 8px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+
+    }
+
+    &_column {
+        flex-direction: column;
+
+        > .{$block}__item {
+            margin-top: 8px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &.{$block}_indent-middle {
+            > .{$block}__item {
+                margin-top: 16px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &_align {
+        &-start {
+            align-items: start;
+        }
+
+        &-end {
+            align-items: end;
+        }
+
+        &-baseline {
+            align-items: baseline;
+        }
+
+        &-center {
+            align-items: center;
+        }
+    }
+
+
+    &_justify {
+        &-start {
+            justify-content: start;
+        }
+
+        &-end {
+            justify-content: end;
+        }
+
+        &-baseline {
+            justify-content: baseline;
+        }
+
+        &-center {
+            justify-content: center;
+        }
+    }
+
+
+    &__item {
+        display: flex;
+
+        &_block {
+            display: block;
+        }
+        &_full {
+            width: 100%;
+        }
+        &_align {
+            &-start {
+                align-items: start;
+            }
+
+            &-end {
+                align-items: end;
+            }
+
+            &-baseline {
+                align-items: baseline;
+            }
+
+            &-center {
+                align-items: center;
+            }
+        }
+        &_justify {
+            &-start {
+                justify-content: start;
+            }
+
+            &-end {
+                justify-content: end;
+            }
+
+            &-baseline {
+                justify-content: baseline;
+            }
+
+            &-center {
+                justify-content: center;
+            }
+        }
+    }
+}

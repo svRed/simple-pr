@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+
+    &:before, &:after {
+        box-sizing: border-box;
+    }
+}
+
+html,
+body {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 12px;
+    line-height: 1.71;
+}
+
+:disabled,
+[disabled],
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/src/styles/fonts/OpenSans/OpenSans-Regular.eot');
+    src: url(/'src/styles/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+        url('/src/styles/fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+        url('/src/styles/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/src/styles/fonts/FontAwesome/icomoon.eot');
+    src: url(/'src/styles/fonts/FontAwesome/icomoon.svg') format('svg'),
+        url('/src/styles/fonts/FontAwesome/icomoon.woff') format('woff'),
+        url('/src/styles/fonts/FontAwesome/icomoon.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}

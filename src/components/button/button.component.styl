@@ -1,0 +1,26 @@
+@import "../../styles/const.styl";
+
+.button {
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid $main_middle;
+    background-color: $main_lighter;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 16px;
+
+    &_main {
+        background-color: $jade;
+        border-color: $jade_middle;
+        color: $white;
+        transition();
+
+        &:hover {
+            background-color: $jade_middle;
+        }
+
+        &:active, &:focus {
+            background-color: $jade_darker;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+/node_modules
+*.log
+.idea
+additional.txt

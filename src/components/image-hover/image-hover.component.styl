@@ -1,0 +1,50 @@
+@import "../../styles/const.styl";
+
+.image-hover {
+    $root = image-hover;
+
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    &__content {
+        height: 100%;
+
+        &:hover {
+            .{$root}__overlay {
+                background-color: rgba(0, 0, 0, 0.5);
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__overlay {
+        &:before {
+            content: '\e903';
+            font-family: 'FontAwesome';
+            color: $white;
+            font-size: 2rem;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    &__main {
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 100%;
+    }
+}

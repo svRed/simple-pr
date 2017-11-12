@@ -1,0 +1,18 @@
+@import "carousel.css";
+@import "../../styles/const.styl";
+
+$height = "calc(100vh - %s)" % $header_height
+
+.slider-block {
+    max-height: $height;
+    overflow: hidden;
+
+    .carousel {
+        max-height: $height;
+        .control-arrow {
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
